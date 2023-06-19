@@ -1,0 +1,9 @@
+*/**
+QtProject.conf
+mimeapps.list
+!.gitignore
+!alacritty/alacritty.yml
+!i3status-rust/config.toml
+!mako/config
+!nvim/init.lua
+!sway/config

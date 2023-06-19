@@ -1,0 +1,52 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "slick"
+
+[icons]
+icons = "material-nf" 
+
+[[block]]
+block = "cpu"
+interval = 0.5
+format = " $icon $utilization $barchart $frequency "
+
+[[block]]
+block = "load"
+interval = 1
+format = " $icon  $1m.eng(w:4) "
+
+[[block]]
+block = "amd_gpu"
+format = " $icon $utilization $vram_used/$vram_total($vram_used_percents) "
+format_alt = ""
+interval = 1
+
+[[block]]
+block = "memory"
+interval = 1
+format = " $icon $mem_used.eng(prefix:M)/$mem_total.eng(prefix:M)($mem_used_percents.eng(w:2)) "
+
+[[block]]
+block = "net"
+interval = 1
+format = " $icon Down $speed_down.eng(prefix:M) $graph_down Up $speed_up.eng(prefix:M) $graph_up IP $ip "
+inactive_format = " $icon Down "
+
+[[block]]
+block = "sound"
+step_width = 0
+
+[[block]]
+block = "music"
+format = " $icon  $title "
+seek_step_secs = 0
+volume_step = 0
+
+[[block]]
+block = "uptime"
+
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%H:%M:%S %a %d/%m/%y') "
