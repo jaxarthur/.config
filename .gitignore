@@ -7,3 +7,6 @@ mimeapps.list
 !mako/config
 !nvim/init.lua
 !sway/config
+!helix/config.toml
+!nushell/config.nu
+!nushell/env.nu
