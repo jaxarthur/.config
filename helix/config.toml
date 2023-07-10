@@ -9,8 +9,4 @@ line-number = "relative"
 [editor.file-picker]
 hidden = false
 
-[keys.insert]
-"tab" = "normal_mode"
 
-[keys.select]
-"tab" = "normal_mode"
